@@ -6,6 +6,7 @@
 #define EX2_GAME_H
 #include "Card.h"
 #include <iostream>
+#include "Player.h"
 
 /*
  * GameStatus:
@@ -57,11 +58,16 @@ public:
      */
     GameStatus getGameStatus() const;
 
-    //TODO: complete the Mtmchkin class.
+    ~Mtmchkin();
 
+    Mtmchkin(const Mtmchkin&) = default;
+    Mtmchkin& operator=(const Mtmchkin& other) = default;
 private:
-    //TODO: complete the Mtmchkin class.
-
+    GameStatus m_status;
+    Player m_player;
+    int m_numberOfCards;
+     Card* m_cards;
+    int m_cardIndex;
 };
 
 
