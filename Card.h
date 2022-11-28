@@ -21,7 +21,7 @@ enum class CardType {Battle, Buff, Heal, Treasure}; // The type of the Card
 class Card {
 public:
     /*
-     * C'tor of Card class
+     * Constructor of Card class
      *
      * @param type - The type of the card.
      * @param stats - The numeral stats of the card.
